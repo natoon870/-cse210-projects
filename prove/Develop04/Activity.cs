@@ -20,7 +20,7 @@ public class Activity
     {
         return _description;
     }
-      public int Duration()
+    public int Duration()
     {
         return _duration;
     }
