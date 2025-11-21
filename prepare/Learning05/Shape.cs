@@ -1,21 +1,31 @@
-public abstract class Shape
+abstract class Goal
 {
-    private string _color;
+    private string _name;
+    private string _description;
+    private int _points;
 
-    public Shape(string color)
+    protected Goal(string name, string description, int points)
     {
-        _color = color;
+        _name = name;
+        _description = description;
+        _points = points;
+    }
+    public string GetName()
+    {
+        return _name;
     }
 
-    public string GetColor()
+    public string GetDescription()
     {
-        return _color;
+        return _description;
     }
 
-    public void SetColor(string color)
+    public int GetPoints()
     {
-        _color = color;
+        return _points;
     }
 
-    public abstract double GetArea();
+    public abstract int RecordEvent();
+    public abstract string GetStatusString();
+    public abstract string GetStringRepresentation();
 }
