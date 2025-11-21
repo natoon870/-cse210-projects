@@ -134,7 +134,7 @@
                 Console.WriteLine("Invalid goal.");
                 return;
             }
-            int earned = _goals[index].RecordEvent();
+            int earned = _goals[index].RecordGoal();
             _score += earned;
 
             Console.WriteLine($"Congragulations! You have earned {earned} points!");

@@ -5,7 +5,7 @@
         {
         }
 
-        public override int RecordEvent()
+        public override int RecordGoal()
         {
             Console.WriteLine($"You recorded '{GetName()}' and earned {GetPoints()} points!");
             return GetPoints();
@@ -18,7 +18,6 @@
 
         public override string GetRepresentation()
         {
-            // Eternal:Name,Description,Points
             return $"Eternal:{GetName()},{GetDescription()},{GetPoints()}";
         }
     }

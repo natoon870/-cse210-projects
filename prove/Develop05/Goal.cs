@@ -26,7 +26,7 @@ abstract class Goal
             return _points;
         }
 
-        public abstract int RecordEvent();
+        public abstract int RecordGoal();
         public abstract string GetStatus();
         public abstract string GetRepresentation();
     }

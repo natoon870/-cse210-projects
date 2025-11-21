@@ -18,7 +18,7 @@ class Checklist : Goal
         return _currentCount >= _targetCount;
     }
 
-    public override int RecordEvent()
+    public override int RecordGoal()
     {
         _currentCount++;
 
