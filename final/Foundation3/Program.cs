@@ -9,7 +9,7 @@ class Program
         Reception reception = new Reception("Wedding Reception", "Wedding Reception for Bob and Sarah", "12/05/2026", "7:00 PM", address2, "wearefinallymarried@gmail.com");
 
         Address address3 = new Address("Main St", "Rexburg", "ID", "USA");
-        OutdoorGathering outdoor = new OutdoorGathering("Party", "93rd Ward, Ward Party", "06/25/2026", "2:00 PM", address3, "Sunny and hot");
+        OutdoorGathering outdoor = new OutdoorGathering("Party", "Ward Party for 93rd Ward", "06/25/2026", "2:00 PM", address3, "Sunny and hot");
 
     
         Console.WriteLine("LECTURE:");

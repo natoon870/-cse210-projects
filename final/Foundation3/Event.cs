@@ -13,15 +13,15 @@ public class Event
         _time = time;
         _address = address;
     }
-  public string StandardDetails()
-{
-    return 
-        $"Title: {_title}\n" +
-        $"Description: {_description}\n" +
-        $"Date: {_date}\n" +
-        $"Time: {_time}\n" +
-        $"Location:\n{_address.FullAddress()}";
-}
+    public string StandardDetails()
+    {
+        return 
+            $"Title: {_title}\n" +
+            $"Description: {_description}\n" +
+            $"Date: {_date}\n" +
+            $"Time: {_time}\n" +
+            $"Location:\n{_address.FullAddress()}";
+    }
     public string Description(string typeName)
     {
         return $"{typeName} | {_title} | {_date}";

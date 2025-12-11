@@ -8,7 +8,6 @@ public class OutdoorGathering : Event
     {
         _weather = weather;
     }
-
     public string OutdoorDetails()
     {
         return StandardDetails()
