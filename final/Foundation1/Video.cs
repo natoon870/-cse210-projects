@@ -3,11 +3,10 @@ using System.Collections.Generic;
 
 public class Video
 {
-    public string _title;
-    public string _author;
-    public int _length;
-
-    public List<Comment> Comments = new List<Comment>();
+    private string _title;
+    private string _author;
+    private int _length;
+    private List<Comment> comments = new List<Comment>();
     public Video(string title, string author, int length)
     {
         _title = title;
@@ -15,11 +14,14 @@ public class Video
         _length = length;
     }
 
-    public int CommentCount()
+    public void AddComment(Comment comment)
     {
-        return Comments.Count;
+        comments.Add(comment);
     }
-
+    private int CommentCount()
+    {
+        return comments.Count;
+    }
     public void Display()
     {
         Console.WriteLine($"Title: {_title}");
@@ -28,12 +30,10 @@ public class Video
         Console.WriteLine($"Number of comments: {CommentCount()}");
         Console.WriteLine();
         Console.WriteLine("Comments:");
-
-        foreach (Comment comment in Comments)
+        foreach (Comment comment in comments)
         {
             comment.Display();
         }
-
         Console.WriteLine();
     }
 }
