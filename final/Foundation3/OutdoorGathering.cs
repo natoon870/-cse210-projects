@@ -8,9 +8,10 @@ public class OutdoorGathering : Event
     {
         _weather = weather;
     }
+
     public string OutdoorDetails()
     {
-        return "something";
+        return StandardDetails()
+             + $"\nType: Outdoor Gathering\nWeather: {_weather}";
     }
-
 }

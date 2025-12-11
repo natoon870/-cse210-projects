@@ -12,9 +12,10 @@ public class Address
         _stateOrProvince = stateOrProvince;
         _country = country;
     }
+
     public string FullAddress()
     {
-        return "something";
+        return $"{_street}, {_city}, {_stateOrProvince}, {_country}";
     }
-
 }
+

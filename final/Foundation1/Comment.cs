@@ -8,4 +8,9 @@ public class Comment
         _name = name;
         _text = text;
     }
+
+    public void Display()
+    {
+        Console.WriteLine($"{_name}: {_text}");
+    }
 }

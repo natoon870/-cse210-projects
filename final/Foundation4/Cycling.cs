@@ -7,16 +7,19 @@ public class Cycling : Activity
     {
         _speed = speed;
     }
+
     public override double Distance()
     {
-        return "something";
+        return _speed * (_minutes / 60.0);
     }
+
     public override double Speed()
     {
-        return "something";
+        return _speed;
     }
+
     public override double Pace()
     {
-        return "something";
+        return 60 / _speed;
     }
 }
